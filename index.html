@@ -89,16 +89,16 @@ border-radius:10px;
       var y = document.getElementById('text_y').value;
       var z = x/(y**2);
       if(z < 18.5){
-        document.getElementById('result').innerHTML='Underweight. Your BMI is ' + z +'kg/m²';
+        document.getElementById('result').innerHTML='Underweight. Your BMI is ' + z +' kg/m²';
       }
       else if(z >= 18.5 && z < 25){
-        document.getElementById('result').innerHTML='Normal. Your BMI is ' + z +'kg/m²';
+        document.getElementById('result').innerHTML='Normal. Your BMI is ' + z +' kg/m²';
       }
       else if(z >= 25 && z < 30){
-        document.getElementById('result').innerHTML='Overweight. Your BMI is ' + z +'kg/m²';
+        document.getElementById('result').innerHTML='Overweight. Your BMI is ' + z +' kg/m²';
       }
       else{
-        document.getElementById('result').innerHTML='Obesity. Your BMI is ' + z +'kg/m²';
+        document.getElementById('result').innerHTML='Obesity. Your BMI is ' + z +' kg/m²';
       }
     }
     
