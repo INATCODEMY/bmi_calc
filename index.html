@@ -15,7 +15,7 @@
   <style>
     body{
       background-color:rgb(0,0,25);
-      color: cyan;
+      color: white;
     }
     #form{
       background-color:rgb(0,0,25)
@@ -23,7 +23,7 @@
       left:10%;
       right: 10%;
       top: 100px;
-      border:1px solid cyan;
+      box-shadow: 5px 5px 20px 5px;
       padding: 25px;
     }
     #text_x, #text_y{
@@ -33,16 +33,16 @@
       border-right: none;
       background: transparent;
       outline: none;
-      color: cyan;
+      color: white;
       font-size: 20px;
       text-align: center;
     }
     ::placeholder{
-      color: cyan;
+      color: white;
     }
     #show{
       outline: none;
-      background-color: cyan;
+      background-color: white;
       padding: 10px;
       width: 200px;
     }
@@ -51,6 +51,7 @@
 
 <body>
   <!-- Project -->
+<h2 id="greet"align="center"></h2>
   <div id="form"align="center">
     <form>
       <h3>Weight(in kg):-</h3>
@@ -64,7 +65,7 @@
     <h2>Result:-</h2>
     <h2 id="result"></h2>
   </div>
-  <h2 id="greet"align="center"></h2>
+  
   <script>
     window.onload=()=>{
       var x = new Date();
