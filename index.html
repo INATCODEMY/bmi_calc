@@ -121,7 +121,11 @@ footer {
         document.getElementById('result').innerHTML='Obesity. Your BMI is ' + z +' kg/m²';
       }
     }
-    
+    window.onload = function(){
+ setTimeout(function(){
+   document.getElementById("load").style.visibility="hidden";
+ }, 3000)
+ }
   </script>
 <footer><h3 id = "copy"align="center">Copyright 2021 Hardik Jain</h3></footer>
 </body>
