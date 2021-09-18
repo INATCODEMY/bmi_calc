@@ -70,9 +70,9 @@ footer {
 
 <body>
 <div id="load"><load></load></div>
-  <!-- Project -->
+  <!-- Project --><h1>BMI Calculator</h1>
   <div id="form"align="center">
-<h1>BMI Calculator</h1>
+
     <form>
       <h2>Weight (in kg):-</h2>
       <input id="text_x"type="number"placeholder="Enter Your Weight"required>
@@ -87,7 +87,11 @@ footer {
   </div>
   
   <script>
-    
+    window.onload = function(){
+ setTimeout(function(){
+   document.getElementById("load").style.visibility="hidden";
+ }, 3000);
+ }
     function show(){
       var x = document.getElementById('text_x').value;
       var y = document.getElementById('text_y').value;
@@ -105,11 +109,7 @@ footer {
         document.getElementById('result').innerHTML='Obesity. Your BMI is ' + z +' kg/m²';
       }
     }
-    window.onload = function(){
- setTimeout(function(){
-   document.getElementById("load").style.visibility="hidden";
- }, 3000)
- }
+    
   </script>
 <footer><h3 id = "copy"align="center">Copyright 2021 Hardik Jain</h3></footer>
 </body>
