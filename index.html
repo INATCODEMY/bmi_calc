@@ -71,7 +71,6 @@ footer {
 <body>
 <div id="load"><load></load></div>
   <!-- Project -->
-<h2 id="greet"align="center"></h2>
   <div id="form"align="center">
 <h1>BMI Calculator</h1>
     <form>
@@ -88,22 +87,7 @@ footer {
   </div>
   
   <script>
-    window.onload=()=>{
-      var x = new Date();
-      var y = x.getHours();
-      if(y >= 6 && y < 12){
-        document.getElementById('greet').innerHTML='Welcome, friends !! <br>!! Good Morning !!';
-      }
-      else if(y >= 12 && y < 15){
-            document.getElementById('greet').innerHTML='Welcome, friends !! <br>!! Good Afternoon !!';
-      }
-      else if(y >= 15 && y < 18){
-            document.getElementById('greet').innerHTML='Welcome, friends !! <br>!! Good Evening !!';
-      }
-      else{
-            document.getElementById('greet').innerHTML='Welcome, friends !! <br>!! Good Night !!';
-      }
-    }
+    
     function show(){
       var x = document.getElementById('text_x').value;
       var y = document.getElementById('text_y').value;
